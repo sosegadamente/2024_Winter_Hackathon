@@ -1,0 +1,8 @@
+
+*{
+  margin: 0;
+  border: none;
+}
+.container{ height: 400vh; width: 100%; background-color: #ffff;}
+.header{ width: 100%; background-color: #000000; height: 100px; position: fixed; box-shadow: 1px 1px 3px 2px;}
+.first_container{width: 100%; background-color: aqua; height: 1250px; color: #ffff; display: flex; justify-content: center; align-items: center; }
