@@ -8,8 +8,8 @@ const $gnb = document.querySelector('.gnb');
 $hamburger.addEventListener('click', function(){
     // console.log(1);
     $sideMenu.classList.add('open')
-    
-    setTimeout(() => {
-        $blackOut.classList.add('open')
-    }, 750);
+    $blackOut.classList.add('open')    
+    // setTimeout(() => {
+    //     $blackOut.classList.add('open')
+    // }, 750);
 })

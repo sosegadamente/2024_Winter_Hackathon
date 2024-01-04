@@ -27,6 +27,7 @@ html::-webkit-scrollbar-track {
 .layout{
     width: 100%;
     height: 400vh;
+    overflow: hidden;
 }
 
 /* 헤더부분 */
@@ -61,9 +62,8 @@ header i{
 }
 
 .sideMenu{
-    display: block;
     transform: translateX(100%);
-    transition: .75s;
+    transition: .5s;
 }
 
 .sideMenu.open{
@@ -75,7 +75,7 @@ header i{
 }
 
 .blackout.open{
-    width: 30%;
+    width: 100%;
     height: 400vh;
     background-color: #000;
     opacity: 70%;
