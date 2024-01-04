@@ -96,6 +96,17 @@ header {
   background-attachment: fixed;
 }
 
+.temp_ > h2, h5 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.spacing {
+  width: 100%;
+  height: 50px;
+}
+
 .middle_container {
   width: 100%;
   height: calc(100vh - 400px);
@@ -133,7 +144,7 @@ header {
   background-size: 120% 150%;
 }
 .middle_contVal-1:hover, .middle_contVal-2:hover {
-  filter: blur(10px);
+  filter: blur(7px);
 }
 
 .middle_contVal-2{
@@ -150,6 +161,7 @@ header {
 
 .middle_contVal-1:hover, .middle_contVal-2:hover {
   backdrop-filter: blur(10px);
+  transition: .5s;
 }
 
 /* 모바일 버전 */
