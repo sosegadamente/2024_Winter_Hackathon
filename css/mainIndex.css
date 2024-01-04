@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track {
   /* justify-content: space-between; */
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .start_health {
     width: 100%;
     height: calc(100vh - 650px);
@@ -126,7 +126,7 @@ background-color: #464646;
     background-size: 120% 150%;
   }
   .middle_contVal-1:hover, .middle_contVal-2:hover {
-    backdrop-filter: blur(10px);
+    filter: blur(10px);
   }
 
 
