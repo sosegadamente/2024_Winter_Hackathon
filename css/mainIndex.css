@@ -38,6 +38,33 @@ html::-webkit-scrollbar-track {
     width: 100%;
     height: calc(100vh - 650px);
     border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #464646;
+  }
+  .und_startHealth_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 200px;
+    /* background-color: #000; */
+  }
+  .und_startHealth_cont > button{
+    width: 150px;
+    height: 50px;
+    font-size:20px ;
+    font-weight: bold;
+    color: black;
+    border: solid 2px black;
+    
+  }
+  .und_startHealth_cont > button:hover{
+background-color: #464646;
   }
   header {
     /* position: fixed; */
@@ -66,7 +93,7 @@ html::-webkit-scrollbar-track {
   }
   .middle_container {
     width: 100%;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 400px);
   }
   .middle_under_container {
     align-items: center;
@@ -75,17 +102,33 @@ html::-webkit-scrollbar-track {
     height: 100%;
     display: flex;
   }
-  .middle_contVal {
+  .middle_contVal-1{
     margin-top: 5px;
     margin-bottom: 5px;
     width: 50%;
     background-color: white;
     height: 97%;
+    background-image: url(/img/middle_content.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120% 150%;
   }
-  .middle_contVal:hover {
-    background-color: #2f2b32;
   }
-}
+  .middle_contVal-2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50%;
+    background-color: white;
+    height: 97%;
+    background-image: url(/img/middle_content_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120% 150%;
+  }
+  .middle_contVal-1:hover, .middle_contVal-2:hover {
+    backdrop-filter: blur(10px);
+  }
+
 
 @media screen and (max-width: 480px) {
   /* 헤더부분 */
