@@ -33,85 +33,101 @@ html::-webkit-scrollbar-track {
   /* justify-content: space-between; */
 }
 
-.start_health {
-  width: 100%;
-  height: calc(100vh - 650px);
-  border: solid 1px black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  background-color: #464646;
-}
-.und_startHealth_cont{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  width: 400px;
-  height: 200px;
-  /* background-color: #000; */
-}
-.und_startHealth_cont > button{
-  width: 150px;
-  height: 50px;
-  font-size:20px ;
-  font-weight: bold;
-  color: black;
-  border: solid 2px black;
-  
-}
-.und_startHealth_cont > button:hover{
+@media screen and (min-width: 481px) {
+  .start_health {
+    width: 100%;
+    height: calc(100vh - 650px);
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #464646;
+  }
+  .und_startHealth_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 200px;
+    /* background-color: #000; */
+  }
+  .und_startHealth_cont > button{
+    width: 150px;
+    height: 50px;
+    font-size:20px ;
+    font-weight: bold;
+    color: black;
+    border: solid 2px black;
+    
+  }
+  .und_startHealth_cont > button:hover{
 background-color: #464646;
-}
-header {
-  /* position: fixed; */
-  width: 100%;
-  height: 100px;
-  padding: 0 30px;
-  color: #fff;
-  background-color: #2f2b32;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.content {
-  color: white;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: calc(100vh - 100px);
-  background-image: url(/img/임시.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-}
-.middle_container {
-  width: 100%;
-  height: calc(100vh - 400px);
-}
-.middle_under_container {
-  align-items: center;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.middle_contVal-1{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 50%;
-  background-color: white;
-  height: 97%;
-  background-image: url(/img/middle_content.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 120% 150%;
-}
+  }
+  header {
+    /* position: fixed; */
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    color: #fff;
+    background-color: #2f2b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .first_content {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(/img/임시.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+  .middle_container {
+    width: 100%;
+    height: calc(100vh - 400px);
+  }
+  .middle_under_container {
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .middle_contVal-1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50%;
+    background-color: white;
+    height: 97%;
+    background-image: url(/img/middle_content.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120% 150%;
+  }
+  }
+  .middle_contVal-2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50%;
+    background-color: white;
+    height: 97%;
+    background-image: url(/img/middle_content_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120% 150%;
+  }
+  .middle_contVal-1:hover, .middle_contVal-2:hover {
+    filter: blur(10px);
+  }
 
 .middle_contVal-2{
   margin-top: 5px;
