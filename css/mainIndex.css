@@ -1,164 +1,166 @@
 /*CSS 초기화 식*/
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    color: inherit;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* 스크롤바 디자인 */
 html::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: #fff;
-    border-radius: 50px;
-    height: 20%;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 20%;
 }
 
 html::-webkit-scrollbar-track {
-    background-color: #2f2b32;  
+  background-color: #2f2b32;
 }
 
 /* 페이지 크기 */
-.layout{
+.layout {
+  width: 100%;
+  height: 300vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+@media screen and (min-width: 480px) {
+  .start_health {
     width: 100%;
-    height: 300vh;
-    overflow: hidden;
+    height: calc(100vh - 650px);
+    border: solid 1px black;
+  }
+  header {
+    /* position: fixed; */
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    color: #fff;
+    background-color: #2f2b32;
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
+  }
+  .first_content {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(/img/임시.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+  .middle_container {
+    width: 100%;
+    height: calc(100vh - 500px);
+  }
+  .middle_under_container {
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .middle_contVal {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50%;
+    background-color: white;
+    height: 97%;
+  }
+  .middle_contVal:hover {
+    background-color: #2f2b32;
+  }
 }
-
-@media screen and (min-width: 480px ) {
-    .start_health{
-        width: 100%;
-        height: calc(100vh - 650px);
-        border: solid 1px black;
-    }
-    header{
-        position: fixed;
-        width: 100%;
-        height: 100px;
-        padding: 0 30px;
-        color: #fff;
-        background-color: #2f2b32;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-    .first_content{
-        font-size: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: calc(100vh - 100px );
-        background-image: url(/img/임시.jpg);
-        background-attachment: fixed;
-    }
-    .middle_container{
-        width: 100%;
-        height: calc(100vh - 500px);
-        /* background-color: black; */
-    }
-    .middle_under_container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
-    .middle_contVal{
-        width: 50%;
-        height: 100%;
-    }
-    .middle_contVal:hover{
-        background-color: #2f2b32;
-    }
-}
-
-
-
 
 @media screen and (max-width: 480px) {
-    
-    
-    /* 헤더부분 */
-    header{
-        width: 100%;
-        height: 100px;
-        padding: 0 30px;
-        color: #fff;
-        background-color: #2f2b32;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  /* 헤더부분 */
+  header {
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    color: #fff;
+    background-color: #2f2b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    header .title{
-        height: 50%;
-    }
+  header .title {
+    height: 50%;
+  }
 
-    header .hamburger{
-        background-color: #2f2b32;
-        border: none;
-        height: 50%;
-        justify-content: center;
-        cursor: pointer;
-    }
+  header .hamburger {
+    background-color: #2f2b32;
+    border: none;
+    height: 50%;
+    justify-content: center;
+    cursor: pointer;
+  }
 
-    header i{
-        padding: 7.5px 0 7.5px  7.5px;
-        font-size: 28px;
-    }
+  header i {
+    padding: 7.5px 0 7.5px 7.5px;
+    font-size: 28px;
+  }
 
-    /* 옆에서 나오는 네비게이션 바 */
-    .sideMenu{
-        transform: translateX(100%);
-        transition: .5s;
-    }
+  /* 옆에서 나오는 네비게이션 바 */
+  .sideMenu {
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
 
-    .sideMenu.open{
-        transform: translateX(0%);
-    }
+  .sideMenu.open {
+    transform: translateX(0%);
+  }
 
-    /* 네비게이션 바 외의 섹션 가려주는 div */
-    .blackout{
-        display: none;
-    }
+  /* 네비게이션 바 외의 섹션 가려주는 div */
+  .blackout {
+    display: none;
+  }
 
-    .blackout.open{
-        width: 100%;
-        height: 400vh;
-        background-color: #000;
-        opacity: 70%;
-        position: absolute;
-        display: block;
-    }
+  .blackout.open {
+    width: 100%;
+    height: 400vh;
+    background-color: #000;
+    opacity: 70%;
+    position: absolute;
+    display: block;
+  }
 
-    /* 네비게이션 바 */
-    .gnb{
-        /* position: fixed; */
-        width: 70%;
-        height: 100vh;
-        position: fixed;
-        right: 0;
-        top: 0;
-        background-color: #141414;
-    }
+  /* 네비게이션 바 */
+  .gnb {
+    /* position: fixed; */
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #141414;
+  }
 
-    /* 섹션들 */
-    section{
-        width: 100%;
-        height: calc(100% - 100px);
-        background-color: yellow;
-    }
+  /* 섹션들 */
+  section {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: yellow;
+  }
 
-    .content{
-        width: 100%;
-        height: calc(100vh - 100px);
-    }
+  .content {
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
 }
