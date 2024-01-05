@@ -5,6 +5,7 @@
   list-style: none;
   box-sizing: border-box;
   color: inherit;
+  border: none;
   text-decoration: none;
 }
 
@@ -28,15 +29,13 @@ html::-webkit-scrollbar-track {
   width: 100%;
   height: 300vh;
   overflow: hidden;
-  /* display: flex; */
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .start_health {
   width: 100%;
   height: calc(100vh - 650px);
-  border: solid 1px black;
+  /* border: solid 1px black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,6 +116,7 @@ header {
   width: 100%;
   height: 100%;
   display: flex;
+  color: white;
 }
 
 .middle_contVal-1{
@@ -163,13 +163,31 @@ header {
   transition: .5s;
 }
 
+.circleBox {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.circleBox i {
+  font-size: 20px;
+}
+
+
 #second {
   height: 100vh;
 }
 
+.start_health {
+  height: 400px;
+}
+
 footer {
-  border: 1px solid black;
   background-color: yellow;
+  height: calc(100% - 100px - (100vh - 100px) - (100vh - 400px) - 100vh - (100vh - 650px));
 }
 
 /* 모바일 버전 */
@@ -247,6 +265,14 @@ footer {
     position: absolute;
     right: 0;
     background-color: #141414;
+    color: #fff;
+    padding: 40px 30px 50px 40px;
+  }
+
+  .gnb > i {
+    display: flex;
+    justify-content: end;
+    font-size: 36px;
   }
 
   /* 섹션들 */
@@ -262,7 +288,7 @@ footer {
   }
 
   .middle_container {
-    height: 600px;
+    height: 60vh;
   }
 
   .middle_under_container {
@@ -271,6 +297,19 @@ footer {
 
   .middle_under_container > div {
     width: 100%;
-    height: 300px;
+    height: 30vh;
+  }
+
+  .start_health {
+    height: 30vh;
+  }
+
+  .und_startHealth_cont{
+    justify-content: space-around;
+  }
+
+  footer {
+    background-color: yellow;
+    height: calc(100% - 100vh - 60vh - 130vh);
   }
 }
