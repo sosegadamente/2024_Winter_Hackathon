@@ -28,7 +28,7 @@ html::-webkit-scrollbar-track {
   width: 100%;
   height: 300vh;
   overflow: hidden;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   /* justify-content: space-between; */
 }
@@ -70,7 +70,6 @@ background-color: #464646;
 }
 
 header {
-  /* position: fixed; */
   width: 100%;
   height: 100px;
   padding: 0 30px;
@@ -96,7 +95,7 @@ header {
   background-attachment: fixed;
 }
 
-.temp_ > h2, h5 {
+#first > .temp_ > h2, h5 {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
@@ -164,10 +163,19 @@ header {
   transition: .5s;
 }
 
+#second {
+  height: 100vh;
+}
+
+footer {
+  border: 1px solid black;
+  background-color: yellow;
+}
+
 /* 모바일 버전 */
 @media screen and (max-width: 480px) {
   .layout {
-    height: 350vh;
+    height: 300vh;
   }
 
   /* 헤더부분 */
@@ -194,7 +202,6 @@ header {
     height: 50%;
     justify-content: center;
     cursor: pointer;
-    z-index: 300;
   }
 
   header i {
@@ -207,16 +214,21 @@ header {
   .sideMenu {
     transform: translateX(100%);
     transition: 0.5s;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* height: 100vh; */
+    z-index: 20;
   }
 
   .sideMenu.open {
     transform: translateX(0%);
-    z-index: 300;
   }
 
   /* 네비게이션 바 외의 섹션 가려주는 div */
   .blackout {
     display: none;
+    z-index: 19;
   }
 
   .blackout.open {
@@ -226,17 +238,14 @@ header {
     opacity: 70%;
     position: absolute;
     display: block;
-    z-index: 300;
   }
 
   /* 네비게이션 바 */
   .gnb {
-    /* position: fixed; */
     width: 70%;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     right: 0;
-    top: 0;
     background-color: #141414;
   }
 
@@ -263,9 +272,5 @@ header {
   .middle_under_container > div {
     width: 100%;
     height: 300px;
-  }
-
-  #second {
-    height: 100vh;
   }
 }

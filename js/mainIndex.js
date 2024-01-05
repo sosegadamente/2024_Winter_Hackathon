@@ -2,12 +2,13 @@ const $hamburger = document.querySelector(".hamburger");
 const $sideMenu = document.querySelector(".sideMenu");
 const $blackOut = document.querySelector(".blackout");
 const $gnb = document.querySelector(".gnb");
+const $header = document.querySelector('header');
 
 // 햄버거매뉴 클릭 시 aside형식으로 나오게 만들기
 $hamburger.addEventListener("click", function () {
   $sideMenu.classList.add("open");
   $blackOut.classList.add("open");
-
+  
   document.body.style.overflow = "hidden";
 });
 
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   animateText();
 });
 
+// 텍스트 애니메이션
 function animateText() {
   const h2Elements = document.querySelectorAll('.temp_ h2');
   const h5Element = document.querySelector('.temp_ h5');
