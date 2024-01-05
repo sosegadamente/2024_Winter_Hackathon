@@ -181,6 +181,7 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    z-index: 200;
   }
 
   header .title {
@@ -193,11 +194,13 @@ header {
     height: 50%;
     justify-content: center;
     cursor: pointer;
+    z-index: 300;
   }
 
   header i {
     padding: 7.5px 0 7.5px 7.5px;
     font-size: 28px;
+    z-index: 300;
   }
 
   /* 옆에서 나오는 네비게이션 바 */
@@ -208,6 +211,7 @@ header {
 
   .sideMenu.open {
     transform: translateX(0%);
+    z-index: 300;
   }
 
   /* 네비게이션 바 외의 섹션 가려주는 div */
@@ -222,6 +226,7 @@ header {
     opacity: 70%;
     position: absolute;
     display: block;
+    z-index: 300;
   }
 
   /* 네비게이션 바 */
