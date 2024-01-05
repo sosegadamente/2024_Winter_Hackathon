@@ -44,6 +44,7 @@ html::-webkit-scrollbar-track {
   color: black;
   background-color: #464646;
 }
+
 .und_startHealth_cont{
   display: flex;
   flex-direction: column;
@@ -54,6 +55,7 @@ html::-webkit-scrollbar-track {
   height: 200px;
   /* background-color: #000; */
 }
+
 .und_startHealth_cont > button{
   width: 150px;
   height: 50px;
@@ -63,6 +65,7 @@ html::-webkit-scrollbar-track {
   border: solid 2px black;
   
 }
+
 .und_startHealth_cont > button:hover{
 background-color: #464646;
   }
@@ -162,6 +165,7 @@ background-color: #464646;
 .und_startHealth_cont > button:hover{
 background-color: #464646;
 }
+
 header {
   /* position: fixed; */
   width: 100%;
@@ -173,7 +177,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.first_content {
+
+.content {
   color: white;
   font-size: 50px;
   display: flex;
@@ -187,10 +192,23 @@ header {
   background-size: 100% 100%;
   background-attachment: fixed;
 }
+
+.temp_ > h2, h5 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.spacing {
+  width: 100%;
+  height: 50px;
+}
+
 .middle_container {
   width: 100%;
   height: calc(100vh - 400px);
 }
+
 .middle_under_container {
   align-items: center;
   background-color: black;
@@ -198,6 +216,7 @@ header {
   height: 100%;
   display: flex;
 }
+
 .middle_contVal-1{
   margin-top: 5px;
   margin-bottom: 5px;
@@ -210,6 +229,7 @@ header {
   background-size: 120% 150%;
 }
 
+  
 .middle_contVal-2{
   margin-top: 5px;
   margin-bottom: 5px;
@@ -223,12 +243,33 @@ header {
 }
 .middle_contVal-1:hover, .middle_contVal-2:hover {
     cursor: pointer;
+  filter: blur(7px);
+}
+
+.middle_contVal-2{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  background-color: white;
+  height: 97%;
+  background-image: url(/img/middle_content_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 120% 150%;
+}
+
+.middle_contVal-1:hover, .middle_contVal-2:hover {
   backdrop-filter: blur(10px);
+  transition: .5s;
 }
 
 
 /* 모바일 버전 */
 @media screen and (max-width: 480px) {
+  .layout {
+    height: 350vh;
+  }
+
   /* 헤더부분 */
   header {
     width: 100%;
@@ -306,53 +347,20 @@ header {
     height: calc(100vh - 100px);
   }
 
-  .first_content {
-    color: white;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100vh - 100px);
-    background-image: url(/img/임시.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+  .middle_container {
+    height: 600px;
   }
 
-  .middle_container {
-    width: 100%;
-    height: calc(100vh - 400px);
-  }
   .middle_under_container {
-    align-items: center;
-    background-color: black;
+    flex-direction: column;
+  }
+
+  .middle_under_container > div {
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: 300px;
   }
-  .middle_contVal-1{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 50%;
-    background-color: white;
-    height: 97%;
-    background-image: url(/img/middle_content.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 120% 150%;
-  }
-  
-  .middle_contVal-2{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 50%;
-    background-color: white;
-    height: 97%;
-    background-image: url(/img/middle_content_2.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 120% 150%;
+
+  #second {
+    height: 100vh;
   }
 }
