@@ -275,6 +275,26 @@ footer {
     font-size: 36px;
   }
 
+  .navBox {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+  }
+
+  .navigation {
+    /* border: 1px solid #fff; */
+    border-radius: 10px 5px 5px 10px;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .navigation:hover {
+    color: #ff0000;
+  }
+
   /* 섹션들 */
   section {
     width: 100%;
