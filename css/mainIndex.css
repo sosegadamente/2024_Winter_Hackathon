@@ -26,7 +26,7 @@ html::-webkit-scrollbar-track {
 /* 페이지 크기 */
 .layout {
   width: 100%;
-  height: 300vh;
+  height: 500vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -34,6 +34,38 @@ html::-webkit-scrollbar-track {
 }
 
 /* desktop view */
+
+.health_body{
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-color: #8f8e8e;
+}
+.health_body_contialner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: solid 1px black;
+}
+.health_body_val_1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  border: solid 1px black;
+}
+.health_body_link{
+  width: 100%;
+  height: 60%;
+}
+.health_body_img1
+
 .start_health {
   width: 100%;
   height: calc(100vh - 650px);
