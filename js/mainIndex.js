@@ -1,13 +1,16 @@
 const $hamburger = document.querySelector(".hamburger");
+console.log($hamburger);
 const $sideMenu = document.querySelector(".sideMenu");
 const $blackOut = document.querySelector(".blackout");
 const $gnb = document.querySelector(".gnb");
+const $header = document.querySelector('header');
+const xBtn = document.querySelector('.gnb > i');
 
 // 햄버거매뉴 클릭 시 aside형식으로 나오게 만들기
 $hamburger.addEventListener("click", function () {
   $sideMenu.classList.add("open");
   $blackOut.classList.add("open");
-
+  
   document.body.style.overflow = "hidden";
 });
 
@@ -18,17 +21,26 @@ $blackOut.addEventListener("click", function () {
 
   document.body.style.overflow = "auto";
 });
+xBtn.addEventListener('click', function(){
+  $sideMenu.classList.remove("open");
+  $blackOut.classList.remove("open");
 
+  document.body.style.overflow = "auto";
+})
+
+//반응형 사이드 메뉴 열렸을 때 스크롤 막기
 function disableScroll() {
   if ($sideMenu.classList.contains("open")) {
     document.addEventListener("scroll");
   }
 }
 
+
+
+// 텍스트 애니메이션
 document.addEventListener("DOMContentLoaded", function () {
   animateText();
 });
-
 function animateText() {
   const h2Elements = document.querySelectorAll('.temp_ h2');
   const h5Element = document.querySelector('.temp_ h5');
