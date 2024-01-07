@@ -79,6 +79,14 @@ header {
   align-items: center;
 }
 
+.navBox {
+  display: none;
+}
+
+.gnb > i {
+  display: none;
+}
+
 .content {
   color: white;
   font-size: 50px;
@@ -318,6 +326,18 @@ footer {
   .middle_under_container > div {
     width: 100%;
     height: 30vh;
+  }
+
+  .goToSection {
+    margin-top: 32.5%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  #goToFirst {
+    align-items: baseline;
   }
 
   .start_health {
