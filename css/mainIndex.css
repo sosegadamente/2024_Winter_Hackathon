@@ -323,6 +323,10 @@ footer {
     flex-direction: column;
   }
 
+  .middle_under_container a {
+    display: inline;
+  }
+
   .middle_under_container > div {
     width: 100%;
     height: 30vh;
