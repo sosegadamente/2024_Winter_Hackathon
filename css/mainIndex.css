@@ -35,7 +35,6 @@ html::-webkit-scrollbar-track {
 /* desktop view */
 
 .health_body{
-
   display: flex;
   justify-content: center;
   width: 100%;
@@ -92,8 +91,8 @@ html::-webkit-scrollbar-track {
   height: 50px;
   font-size:20px ;
   font-weight: bold;
-  color: black;
-  border: solid 2px black;
+  color: #000;
+  border: solid 2px #000;
   
 }
 
@@ -231,7 +230,7 @@ header {
 }
 
 #first {
-  background-image: url(/img/검은배경\ 모바일4.jpg);
+  background-image: url(/img/검은배경\ 모바일4.jpg); 
 }
 
 #first > .temp_ > h2, h5 {
@@ -250,6 +249,7 @@ header {
 #second > video {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .spacing {
@@ -491,6 +491,10 @@ footer {
 
   #goToFirst {
     align-items: baseline;
+  }
+
+  .directGo {
+    font-size: 1.5em;
   }
 
   .start_health {
