@@ -238,6 +238,7 @@ header {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
+  color: black;
 }
 
 #second {
@@ -246,6 +247,10 @@ header {
   height: 100vh; /* 화면 높이에 맞게 조절 */
 }
 
+#second > video {
+  height: 100%;
+  width: 100%;
+}
 
 .spacing {
   width: 100%;
@@ -290,6 +295,7 @@ header {
   background-position: center center;
   background-size: 120% 150%;
 }
+
 .middle_contVal-1:hover, .middle_contVal-2:hover {
     cursor: pointer;
   filter: blur(7px);
