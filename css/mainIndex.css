@@ -236,8 +236,8 @@ header {
 #first > .temp_ > h2, h5 {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-  color: black;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  color: #000;
 }
 
 #second {
@@ -342,7 +342,6 @@ header {
 }
 
 footer {
-  background-color: yellow;
   height: calc(100% - 100px - (100vh - 100px) - (100vh - 400px) - 100vh - (100vh - 650px));
 }
 
@@ -516,7 +515,6 @@ footer {
   }
 
   footer {
-    background-color: yellow;
     height: calc(100% - 100vh - 60vh - 130vh);
   }
 }
