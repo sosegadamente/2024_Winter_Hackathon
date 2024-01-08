@@ -34,15 +34,14 @@ html::-webkit-scrollbar-track {
 
 /* desktop view */
 
-.health_body{
-
+.health_body {
   display: flex;
   justify-content: center;
   width: 100%;
   height: calc(100vh - 200px);
   background-color: #8f8e8e;
 }
-.health_body_contialner{
+.health_body_contialner {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +49,7 @@ html::-webkit-scrollbar-track {
   height: 100%;
   border: solid 1px black;
 }
-.health_body_val_1{
+.health_body_val_1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -59,13 +58,11 @@ html::-webkit-scrollbar-track {
   height: 40%;
   border: solid 1px black;
 }
-.health_body_link{
+.health_body_link {
   width: 100%;
   height: 60%;
 }
-.health_body_img1
-
-.start_health {
+.health_body_img1 .start_health {
   width: 100%;
   height: calc(100vh - 650px);
   /* border: solid 1px black; */
@@ -76,7 +73,7 @@ html::-webkit-scrollbar-track {
   background-color: #464646;
 }
 
-.und_startHealth_cont{
+.und_startHealth_cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,81 +84,81 @@ html::-webkit-scrollbar-track {
   /* background-color: #000; */
 }
 
-.und_startHealth_cont > button{
+.und_startHealth_cont > button {
   width: 150px;
   height: 50px;
-  font-size:20px ;
+  font-size: 20px;
   font-weight: bold;
   color: black;
   border: solid 2px black;
-  
 }
 
-.und_startHealth_cont > button:hover{
-background-color: #464646;
-  }
-  header {
-    /* position: fixed; */
-    width: 100%;
-    height: 100px;
-    padding: 0 30px;
-    color: #fff;
-    background-color: #2f2b32;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .first_content {
-    color: white;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100vh - 100px);
-    background-image: url(/img/임시.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-  }
-  .middle_container {
-    width: 100%;
-    height: calc(100vh - 400px);
-  }
-  .middle_under_container {
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
-  .middle_contVal-1{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 50%;
-    background-color: white;
-    height: 97%;
-    background-image: url(/img/middle_content.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 120% 150%;
-  }
-  
-  .middle_contVal-2{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 50%;
-    background-color: white;
-    height: 97%;
-    background-image: url(/img/middle_content_2.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 120% 150%;
-  }
-  .middle_contVal-1:hover, .middle_contVal-2:hover {
-    filter: blur(10px);
-  }
+.und_startHealth_cont > button:hover {
+  background-color: #464646;
+}
+header {
+  /* position: fixed; */
+  width: 100%;
+  height: 100px;
+  padding: 0 30px;
+  color: #fff;
+  background-color: #2f2b32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first_content {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url(/img/임시.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.middle_container {
+  width: 100%;
+  height: calc(100vh - 400px);
+}
+.middle_under_container {
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.middle_contVal-1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  background-color: white;
+  height: 97%;
+  background-image: url(/img/middle_content.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 120% 150%;
+}
+
+.middle_contVal-2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  background-color: white;
+  height: 97%;
+  background-image: url(/img/middle_content_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 120% 150%;
+}
+.middle_contVal-1:hover,
+.middle_contVal-2:hover {
+  filter: blur(10px);
+}
 .start_health {
   width: 100%;
   height: calc(100vh - 650px);
@@ -172,7 +169,7 @@ background-color: #464646;
   color: black;
   background-color: #464646;
 }
-.und_startHealth_cont{
+.und_startHealth_cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,19 +179,17 @@ background-color: #464646;
   height: 200px;
   /* background-color: #000; */
 }
-.und_startHealth_cont > button{
+.und_startHealth_cont > button {
   width: 150px;
   height: 50px;
-  font-size:20px ;
+  font-size: 20px;
   font-weight: bold;
   color: black;
   border: solid 2px black;
   cursor: pointer;
-
-  
 }
-.und_startHealth_cont > button:hover{
-background-color: #464646;
+.und_startHealth_cont > button:hover {
+  background-color: #464646;
 }
 
 header {
@@ -223,7 +218,8 @@ header {
   background-attachment: fixed;
 }
 
-#first > .temp_ > h2, h5 {
+#first > .temp_ > h2,
+h5 {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
@@ -248,7 +244,7 @@ header {
   color: white;
 }
 
-.middle_contVal-1{
+.middle_contVal-1 {
   margin-top: 5px;
   margin-bottom: 5px;
   width: 50%;
@@ -260,8 +256,7 @@ header {
   background-size: 120% 150%;
 }
 
-  
-.middle_contVal-2{
+.middle_contVal-2 {
   margin-top: 5px;
   margin-bottom: 5px;
   width: 50%;
@@ -272,12 +267,13 @@ header {
   background-position: center center;
   background-size: 120% 150%;
 }
-.middle_contVal-1:hover, .middle_contVal-2:hover {
-    cursor: pointer;
+.middle_contVal-1:hover,
+.middle_contVal-2:hover {
+  cursor: pointer;
   filter: blur(7px);
 }
 
-.middle_contVal-2{
+.middle_contVal-2 {
   margin-top: 5px;
   margin-bottom: 5px;
   width: 50%;
@@ -289,11 +285,11 @@ header {
   background-size: 120% 150%;
 }
 
-.middle_contVal-1:hover, .middle_contVal-2:hover {
+.middle_contVal-1:hover,
+.middle_contVal-2:hover {
   backdrop-filter: blur(10px);
-  transition: .5s;
+  transition: 0.5s;
 }
-
 
 .circleBox {
   border: 1px solid #fff;
@@ -308,7 +304,6 @@ header {
   font-size: 20px;
 }
 
-
 #second {
   height: 100vh;
 }
@@ -319,7 +314,9 @@ header {
 
 footer {
   background-color: yellow;
-  height: calc(100% - 100px - (100vh - 100px) - (100vh - 400px) - 100vh - (100vh - 650px));
+  height: calc(
+    100% - 100px - (100vh - 100px) - (100vh - 400px) - 100vh - (100vh - 650px)
+  );
 }
 
 /* 모바일 버전 */
@@ -456,7 +453,7 @@ footer {
     height: 30vh;
   }
 
-  .und_startHealth_cont{
+  .und_startHealth_cont {
     justify-content: space-around;
   }
 
