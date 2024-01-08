@@ -57,3 +57,9 @@ function animateText() {
       h5Element.style.transform = 'translateY(0)';
   }, h2Elements.length * 400); // h5 요소는 모든 h2 요소가 나타난 후에 나타남
 }
+
+const $underStartBtn = document.querySelector('.under_start')
+
+$underStartBtn.addEventListener('click', function(){
+  window.location.href = "todo.html"
+})
