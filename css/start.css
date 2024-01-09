@@ -31,7 +31,7 @@
 #first {
     background-image: url(/img/검은배경\ 모바일4.jpg); 
 }
-  
+
 #first > .temp_ > h2, h5 {
     opacity: 0;
     transform: translateY(20px);
