@@ -100,6 +100,7 @@ header {
   /* background-color: yellow; */
   display: flex;
   position: absolute;
+  display: none;
 }
 
 .blackOut {
@@ -107,6 +108,15 @@ header {
   height: 100%;
   background-color: #000;
   opacity: 70%;
+}
+
+.cardInfo {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  background-color: #fff;
 }
 
 .stimulation {
@@ -138,7 +148,6 @@ header {
 #onThisSection > a > p{
   color: #000;
 }
-
 
 .iconContainer a {
   display: flex;
