@@ -54,4 +54,25 @@ function animateText() {
     h5Element.style.opacity = "1";
     h5Element.style.transform = "translateY(0)";
   }, h2Elements.length * 400); // h5 요소는 모든 h2 요소가 나타난 후에 나타남
+// JavaScript code for handling card interactions
+
+// Function to show cardOnClick and bind click event for blackOut
+function showCardOnClick(cardId) {
+    const cardOnClick = document.getElementById(cardId);
+    cardOnClick.style.display = 'block';
+
+    const blackOut = cardOnClick.querySelector('.blackOut');
+    blackOut.addEventListener('click', () => hideCardOnClick(cardId));
 }
+
+// Function to hide cardOnClick
+function hideCardOnClick(cardId) {
+    const cardOnClick = document.getElementById(cardId);
+    cardOnClick.style.display = 'none';
+}
+
+// Event listeners for each card
+document.getElementById('firstCard').addEventListener('click', () => showCardOnClick('firstOnClick'));
+document.getElementById('secondCard').addEventListener('click', () => showCardOnClick('secondOnClick'));
+document.getElementById('thirdCard').addEventListener('click', () => showCardOnClick('thirdOnClick'));
+document.getElementById('fourthCard').addEventListener('click', () => showCardOnClick('fourthOnClick'));

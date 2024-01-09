@@ -5,83 +5,129 @@
   list-style: none;
   box-sizing: border-box;
   color: inherit;
-  border: none;
   text-decoration: none;
 }
 
-/* 스크롤바 디자인 */
-html::-webkit-scrollbar {
-  width: 5px;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  border-radius: 50px;
-  height: 20%;
-}
-
-html::-webkit-scrollbar-track {
-  background-color: #2f2b32;
-}
-
-/* 페이지 크기 */
+/* 레이아웃 */
 .layout {
   width: 100%;
-  height: 500vh;
-  overflow: hidden;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-/* desktop view */
-
-.health_body {
-  display: flex;
-  justify-content: center;
+/* 컨텐츠(네비게이션 바를 제외한 부분) */
+.contents {
   width: 100%;
-  height: calc(100vh - 200px);
-  background-color: #8f8e8e;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  height: 8vh;
+  background-color: #909090;
+}
+
+.cardScroll {
+  width: 100%;
+  overflow-x: scroll;
+  height: 40%;
 }
 .health_body_contialner {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cardSection h2 {
+  font-size: 22px;
+}
+
+.cardScroll {
+  height: 80%;
+}
+
+.cardContainer {
   height: 100%;
   border: solid 1px black;
 }
 .health_body_val_1 {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px 1px #838383;
+}
+
+.cardImage {
   width: 100%;
+  height: 55%;
+  background-color: #9a832a;
+}
+
+#firstCard > .cardImage {
+  background-image: url(/img/back2.jpg);
+  background-size: cover;
+}
+
+#secondCard > .cardImage {
+  background-image: url(/img/shoulder2.jpg);
+  background-size: cover;
+}
+
+#thirdCard > .cardImage {
+  background-image: url(/img/chest2.jpg);
+  background-size: cover;
+}
+
+#fourthCard > .cardImage {
+  background-image: url(/img/squat2.jpg);
+  background-size: cover;
+}
+.cardFont {
+  margin: 5px;
+  padding: 0.25em 1em;
+}
+
+.cardFont h5 {
+  font-size: 1.75em;
+}
+
+.cardFont p {
+  color: #909090;
+  padding: 3px;
+  font-size: 0.8em;
+}
+
+.abox {
   height: 40%;
   border: solid 1px black;
 }
 .health_body_link {
   width: 100%;
-  height: 60%;
+  height: 100%;
+  background-color: #000;
+  opacity: 70%;
 }
 .health_body_img1 .start_health {
   width: 100%;
-  height: calc(100vh - 650px);
-  /* border: solid 1px black; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  background-color: #464646;
+  border-radius: 20px 20px 0 0;
+  background-color: #e6e4e4;
+  padding: 30px;
 }
 
 .und_startHealth_cont {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
-  width: 400px;
-  height: 200px;
-  /* background-color: #000; */
+  width: 100%;
+  height: 100%;
 }
 
 .und_startHealth_cont > button {
@@ -161,10 +207,10 @@ header {
 }
 .start_health {
   width: 100%;
-  height: calc(100vh - 650px);
-  border: solid 1px black;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #838383;
   display: flex;
-  justify-content: center;
   align-items: center;
   color: black;
   background-color: #464646;
@@ -195,27 +241,16 @@ header {
 header {
   width: 100%;
   height: 100px;
-  padding: 0 30px;
-  color: #fff;
-  background-color: #2f2b32;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 
-.content {
-  color: white;
-  font-size: 50px;
+.iconContainer {
+  width: 96px;
+  /* border: 1px solid #000; */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: calc(100vh - 100px);
-  background-image: url(/img/임시.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  border-radius: 50px;
 }
 
 #first > .temp_ > h2,
@@ -230,14 +265,10 @@ h5 {
   height: 50px;
 }
 
-.middle_container {
-  width: 100%;
-  height: calc(100vh - 400px);
-}
-
-.middle_under_container {
-  align-items: center;
-  background-color: black;
+.iconContainer a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
   display: flex;
