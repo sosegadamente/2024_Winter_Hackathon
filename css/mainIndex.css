@@ -37,9 +37,7 @@ header {
   overflow-x: scroll;
   height: 40%;
 }
-
-.cardSection {
-  height: 40%;
+.health_body_contialner {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -57,16 +55,9 @@ header {
 
 .cardContainer {
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  width: 1000px;
-  padding: 10px;
+  border: solid 1px black;
 }
-
-.card {
-  width: 22.5%;
-  height: 100%;
-  /* border: 1px solid #000; */
+.health_body_val_1 {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -101,7 +92,7 @@ header {
 }
 .cardFont {
   margin: 5px;
-  padding: .25em 1em;
+  padding: 0.25em 1em;
 }
 
 .cardFont h5 {
@@ -116,38 +107,22 @@ header {
 
 .abox {
   height: 40%;
-  width: 100%;
-  /* border: 1px solid #000; */
-  padding: 10px;
+  border: solid 1px black;
 }
-
-.cardOnClick {
-  width: 100vw;
-  height: 100vh;
-  /* background-color: yellow; */
-  display: flex;
-  position: absolute;
-  display: none;
-}
-
-.blackOut {
+.health_body_link {
   width: 100%;
   height: 100%;
   background-color: #000;
   opacity: 70%;
 }
-
-.cardInfo {
-  position: absolute;
-  bottom: 0;
-  height: 50%;
+.health_body_img1 .start_health {
   width: 100%;
   border-radius: 20px 20px 0 0;
   background-color: #e6e4e4;
   padding: 30px;
 }
 
-.whiteBox {
+.und_startHealth_cont {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -155,48 +130,115 @@ header {
   height: 100%;
 }
 
-.whiteBox img {
-  margin: 0 auto;
-  width: 90%;
-  height: 50%;
+.und_startHealth_cont > button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border: solid 2px black;
 }
 
-.whiteBox > p {
-  color: #6d6d6d;
+.und_startHealth_cont > button:hover {
+  background-color: #464646;
 }
-
-.whiteBox > a {
-  height: 15%;
+header {
+  /* position: fixed; */
   width: 100%;
+  height: 100px;
+  padding: 0 30px;
+  color: #fff;
+  background-color: #2f2b32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first_content {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url(/img/임시.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.middle_container {
+  width: 100%;
+  height: calc(100vh - 400px);
+}
+.middle_under_container {
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.middle_contVal-1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  background-color: white;
+  height: 97%;
+  background-image: url(/img/middle_content.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 120% 150%;
 }
 
-.goDirect {
+.middle_contVal-2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  background-color: white;
+  height: 97%;
+  background-image: url(/img/middle_content_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 120% 150%;
+}
+.middle_contVal-1:hover,
+.middle_contVal-2:hover {
+  filter: blur(10px);
+}
+.start_health {
   width: 100%;
   border-radius: 10px;
   height: 100%;
   background-color: #838383;
   display: flex;
   align-items: center;
-  justify-content: center;
+  color: black;
+  background-color: #464646;
 }
-
-.goDirect > p {
-  color: #fff;
-  font-size: 20px;
-}
-
-.stimulation {
-  background-image: url(/img/middle_content.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-}
-
-/* 글로벌 네비게이션 바 */
-.bottomNav {
-  /* border: 1px solid #000; */
+.und_startHealth_cont {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 200px;
+  /* background-color: #000; */
+}
+.und_startHealth_cont > button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border: solid 2px black;
+  cursor: pointer;
+}
+.und_startHealth_cont > button:hover {
+  background-color: #464646;
+}
+
+header {
   width: 100%;
   height: 100px;
   justify-content: space-around;
@@ -211,8 +253,16 @@ header {
   border-radius: 50px;
 }
 
-#onThisSection > a > p{
-  color: #000;
+#first > .temp_ > h2,
+h5 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.spacing {
+  width: 100%;
+  height: 50px;
 }
 
 .iconContainer a {
@@ -221,15 +271,225 @@ header {
   justify-content: center;
   width: 100%;
   height: 100%;
+  display: flex;
+  color: white;
+}
+
+.middle_contVal-1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  background-color: white;
+  height: 97%;
+  background-image: url(/img/middle_content.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 120% 150%;
+}
+
+.middle_contVal-2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  background-color: white;
+  height: 97%;
+  background-image: url(/img/middle_content_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 120% 150%;
+}
+.middle_contVal-1:hover,
+.middle_contVal-2:hover {
+  cursor: pointer;
+  filter: blur(7px);
+}
+
+.middle_contVal-2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  background-color: white;
+  height: 97%;
+  background-image: url(/img/middle_content_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 120% 150%;
+}
+
+.middle_contVal-1:hover,
+.middle_contVal-2:hover {
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+}
+
+.circleBox {
+  border: 1px solid #fff;
   border-radius: 50px;
-  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }
 
-.iconContainer > a > p {
-  color: #909090;
-  margin-top: .5em;
+.circleBox i {
+  font-size: 20px;
 }
 
-.iconContainer i {
-  scale: 170%;
+#second {
+  height: 100vh;
+}
+
+.start_health {
+  height: 400px;
+}
+
+footer {
+  background-color: yellow;
+  height: calc(
+    100% - 100px - (100vh - 100px) - (100vh - 400px) - 100vh - (100vh - 650px)
+  );
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 480px) {
+  .layout {
+    height: 300vh;
+  }
+
+  /* 헤더부분 */
+  header {
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    color: #fff;
+    background-color: #2f2b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 200;
+  }
+
+  header .title {
+    height: 50%;
+  }
+
+  header .hamburger {
+    background-color: #2f2b32;
+    border: none;
+    height: 50%;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  header i {
+    padding: 7.5px 0 7.5px 7.5px;
+    font-size: 28px;
+    z-index: 300;
+  }
+
+  /* 옆에서 나오는 네비게이션 바 */
+  .sideMenu {
+    transform: translateX(100%);
+    transition: 0.5s;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* height: 100vh; */
+    z-index: 20;
+  }
+
+  .sideMenu.open {
+    transform: translateX(0%);
+  }
+
+  /* 네비게이션 바 외의 섹션 가려주는 div */
+  .blackout {
+    display: none;
+    z-index: 19;
+  }
+
+  .blackout.open {
+    width: 100%;
+    height: 400vh;
+    background-color: #000;
+    opacity: 70%;
+    position: absolute;
+    display: block;
+  }
+
+  /* 네비게이션 바 */
+  .gnb {
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background-color: #141414;
+    color: #fff;
+    padding: 40px 30px 50px 40px;
+  }
+
+  .gnb > i {
+    display: flex;
+    justify-content: end;
+    font-size: 36px;
+  }
+
+  .navBox {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+  }
+
+  .navigation {
+    /* border: 1px solid #fff; */
+    border-radius: 10px 5px 5px 10px;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .navigation:hover {
+    color: #ff0000;
+  }
+
+  /* 섹션들 */
+  section {
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: yellow; */
+  }
+
+  .content {
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+
+  .middle_container {
+    height: 60vh;
+  }
+
+  .middle_under_container {
+    flex-direction: column;
+  }
+
+  .middle_under_container > div {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .start_health {
+    height: 30vh;
+  }
+
+  .und_startHealth_cont {
+    justify-content: space-around;
+  }
+
+  footer {
+    background-color: yellow;
+    height: calc(100% - 100vh - 60vh - 130vh);
+  }
 }
