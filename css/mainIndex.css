@@ -28,7 +28,7 @@
 
 header {
   width: 100%;
-  height: 10%;
+  height: 8vh;
   background-color: #909090;
 }
 
@@ -47,6 +47,10 @@ header {
   margin: 0 auto;
 }
 
+.cardSection h2 {
+  font-size: 22px;
+}
+
 .cardScroll {
   height: 80%;
 }
@@ -56,17 +60,18 @@ header {
   display: flex;
   justify-content: space-between;
   width: 1000px;
+  padding: 10px;
 }
 
 .card {
   width: 22.5%;
   height: 100%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  /* box-shadow: 2px 2px 3px 3px #838383; */
+  box-shadow: 1px 1px 3px 1px #838383;
 }
 
 .cardImage {
@@ -75,16 +80,38 @@ header {
   background-color: #9a832a;
 }
 
+#firstCard > .cardImage {
+  background-image: url(/img/back2.jpg);
+  background-size: cover;
+}
+
+#secondCard > .cardImage {
+  background-image: url(/img/shoulder2.jpg);
+  background-size: cover;
+}
+
+#thirdCard > .cardImage {
+  background-image: url(/img/chest2.jpg);
+  background-size: cover;
+}
+
+#fourthCard > .cardImage {
+  background-image: url(/img/squat2.jpg);
+  background-size: cover;
+}
 .cardFont {
-  padding: 0 1em;
+  margin: 5px;
+  padding: .25em 1em;
 }
 
 .cardFont h5 {
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 .cardFont p {
   color: #909090;
+  padding: 3px;
+  font-size: 0.8em;
 }
 
 .abox {
@@ -116,7 +143,46 @@ header {
   height: 50%;
   width: 100%;
   border-radius: 20px 20px 0 0;
-  background-color: #fff;
+  background-color: #e6e4e4;
+  padding: 30px;
+}
+
+.whiteBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.whiteBox img {
+  margin: 0 auto;
+  width: 90%;
+  height: 50%;
+}
+
+.whiteBox > p {
+  color: #6d6d6d;
+}
+
+.whiteBox > a {
+  height: 15%;
+  width: 100%;
+}
+
+.goDirect {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #838383;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goDirect > p {
+  color: #fff;
+  font-size: 20px;
 }
 
 .stimulation {
@@ -161,6 +227,7 @@ header {
 
 .iconContainer > a > p {
   color: #909090;
+  margin-top: .5em;
 }
 
 .iconContainer i {
