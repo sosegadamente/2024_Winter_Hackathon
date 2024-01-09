@@ -7,11 +7,12 @@ let elapsedTime = 0;
 
 function startTimer() {
     startTime = Date.now() - elapsedTime;
-    timer = setInterval(updateDisplay, 1000);
+    timer = setInterval(updateDisplayAndSave, 1000);
 }
 
 function stopTimer() {
     clearInterval(timer);
+    saveTimerState();
 }
 
 function resetTimer() {
@@ -19,7 +20,12 @@ function resetTimer() {
     isRunning = false;
     startTime = undefined;
     elapsedTime = 0;
+    updateDisplayAndSave();
+}
+
+function updateDisplayAndSave() {
     updateDisplay();
+    saveTimerState();
 }
 
 function updateDisplay() {
@@ -39,15 +45,22 @@ function padZero(value) {
 }
 
 function saveTimerState() {
-    localStorage.setItem('timerState', JSON.stringify({ isRunning, startTime, elapsedTime }));
+    try {
+        localStorage.setItem('timerState', JSON.stringify({ isRunning, startTime, elapsedTime }));
+    } catch (error) {
+        console.error('Error saving timer state:', error);
+    }
 }
 
 function loadTimerState() {
     const timerState = JSON.parse(localStorage.getItem('timerState'));
 
-    if (timerState && timerState.isRunning) {
-        isRunning = true;
-        startTimer();
+    if (timerState) {
+        isRunning = timerState.isRunning;
+
+        if (isRunning) {
+            startTimer();
+        }
     }
 }
 
@@ -66,13 +79,11 @@ document.getElementById('stopBtn').addEventListener('click', () => {
     if (isRunning) {
         isRunning = false;
         stopTimer();
-        saveTimerState();
     }
 });
 
 document.getElementById('resetBtn').addEventListener('click', () => {
     resetTimer();
-    saveTimerState();
 });
 
 // Add window unload event to save state
