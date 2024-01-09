@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="/css/timer.css">
+    <script src="https://kit.fontawesome.com/23e68daf7b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="contents">
+            <header>
+                <!-- 여기에 헤더 내용을 추가하세요 -->
+                <h1>Your Website Name</h1>
+            </header>
+            
+            <!-- 타이머 영역 -->
+            <div class="timer-container">
+                <h2>Timer</h2>
+                <!-- 타이머 내용을 추가하세요 -->
+                <div class="timer">
+                    <!-- 타이머의 내용을 추가하세요 -->
+                    <span id="hours">00</span> :
+                    <span id="minutes">00</span> :
+                    <span id="seconds">00</span>
+                </div>
+                <button id="startBtn">Start</button>
+                <button id="stopBtn">Stop</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+        <!-- 아래 네비게이션 바 -->
+        <div class="bottomNav">
+            <!-- 네비게이션 바의 내용을 추가하세요 -->
+            <div class="iconContainer">
+                <a href="mainIndex.html">
+                    <i class="fa-solid fa-house" style="margin-bottom: 3px; color: #909090; z-index: 10;"></i>
+                    <p>home</p>
+                </a>
+            </div>
+            <div class="iconContainer" id="onThisSection">
+                <a href="timer.html">
+                    <i class="fa-solid fa-clock" style="margin-bottom: 3px; z-index: 10;"></i>
+                    <p>timer</p>
+                </a>
+            </div>
+            <div class="iconContainer">
+                <a href="form.html">
+                    <i class="fa-solid fa-dumbbell" style="margin-bottom: 3px; color: #909090; z-index: 10;"></i>
+                    <p>posture</p>
+                </a>
+            </div>
+            <div class="iconContainer">
+                <a href="todo.html">
+                    <i class="fa-solid fa-list" style="margin-bottom: 3px; color: #909090; z-index: 10;"></i>
+                    <p>list</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="/js/timer.js"></script>
+</body>
+
+</html>
