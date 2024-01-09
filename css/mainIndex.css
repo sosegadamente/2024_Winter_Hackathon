@@ -28,7 +28,7 @@
 
 header {
   width: 100%;
-  height: 8vh;
+  height: 10%;
   background-color: #909090;
 }
 
@@ -45,24 +45,26 @@ header {
   margin: 0 auto;
 }
 
-.cardSection h2 {
-  font-size: 22px;
-}
-
 .cardScroll {
   height: 80%;
 }
 
 .cardContainer {
   height: 100%;
-  border: solid 1px black;
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
 }
-.health_body_val_1 {
+
+.card {
+  width: 22.5%;
+  height: 100%;
+  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 1px 1px 3px 1px #838383;
+  /* box-shadow: 2px 2px 3px 3px #838383; */
 }
 
 .cardImage {
@@ -71,38 +73,17 @@ header {
   background-color: #9a832a;
 }
 
-#firstCard > .cardImage {
-  background-image: url(/img/back2.jpg);
-  background-size: cover;
-}
-
-#secondCard > .cardImage {
-  background-image: url(/img/shoulder2.jpg);
-  background-size: cover;
-}
-
-#thirdCard > .cardImage {
-  background-image: url(/img/chest2.jpg);
-  background-size: cover;
-}
-
-#fourthCard > .cardImage {
-  background-image: url(/img/squat2.jpg);
-  background-size: cover;
-}
 .cardFont {
   margin: 5px;
   padding: 0.25em 1em;
 }
 
 .cardFont h5 {
-  font-size: 1.75em;
+  font-size: 2em;
 }
 
 .cardFont p {
   color: #909090;
-  padding: 3px;
-  font-size: 0.8em;
 }
 
 .abox {
@@ -492,4 +473,15 @@ footer {
     background-color: yellow;
     height: calc(100% - 100vh - 60vh - 130vh);
   }
+}
+
+  align-items: center;
+}
+
+.iconContainer > a > p {
+  color: #909090;
+}
+
+.iconContainer i {
+  scale: 170%;
 }
