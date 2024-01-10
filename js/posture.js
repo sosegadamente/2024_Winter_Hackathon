@@ -39,11 +39,11 @@ function hideCardOnClick(cardId) {
 
 // Event listeners for each card
 document.getElementById('machine1').addEventListener('click', () => showCardOnClick('firstOnClick'));
-document.getElementById('secondCard').addEventListener('click', () => showCardOnClick('secondOnClick'));
-document.getElementById('thirdCard').addEventListener('click', () => showCardOnClick('thirdOnClick'));
-document.getElementById('fourthCard').addEventListener('click', () => showCardOnClick('fourthOnClick'));
-document.getElementById('fifthCard').addEventListener('click', () => showCardOnClick('fifthOnClick'));
-document.getElementById('sixthCard').addEventListener('click', () => showCardOnClick('sixthOnClick'));
-document.getElementById('seventhCard').addEventListener('click', () => showCardOnClick('seventhOnClick'));
-document.getElementById('eighthCard').addEventListener('click', () => showCardOnClick('eighthOnClick'));
-document.getElementById('ninthCard').addEventListener('click', () => showCardOnClick('ninthOnClick'));
+document.getElementById('machine2').addEventListener('click', () => showCardOnClick('secondOnClick'));
+document.getElementById('machine3').addEventListener('click', () => showCardOnClick('thirdOnClick'));
+document.getElementById('machine4').addEventListener('click', () => showCardOnClick('fourthOnClick'));
+document.getElementById('machine5').addEventListener('click', () => showCardOnClick('fifthOnClick'));
+document.getElementById('machine6').addEventListener('click', () => showCardOnClick('sixthOnClick'));
+document.getElementById('machine7').addEventListener('click', () => showCardOnClick('seventhOnClick'));
+document.getElementById('machine8').addEventListener('click', () => showCardOnClick('eighthOnClick'));
+document.getElementById('machine9').addEventListener('click', () => showCardOnClick('ninthOnClick'));
