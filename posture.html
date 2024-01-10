@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer</title>
-    <link rel="stylesheet" href="/css/timer.css">
+    <title>Posture</title>
+    <link rel="stylesheet" href="/css/posture.css">
     <script src="https://kit.fontawesome.com/23e68daf7b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,39 +15,73 @@
             <header>
                 <h1></h1>
             </header>
-            <section class="form"></section>
+            <section class="form">
+                <div class="slideContainer">
+                    <div class="gymMachine" id="machine1">
+                        <div class="machineImg"></div>
+                        <div class="machineFont">
+                            <p class="machineName">aa</p>
+                            <p class="machinePart">Lorem.</p>
+                            <p class="machineEx">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                    <div class="gymMachine"></div>
+                    <div class="gymMachine"></div>
+                    <div class="gymMachine"></div>
+                    <div class="gymMachine"></div>
+                    <div class="gymMachine"></div>
+                    <div class="gymMachine"></div>
+                    <div class="gymMachine"></div>
+                    <div class="gymMachine"></div>
+                </div>
+            </section>
             <div class="sizing"></div>
-            
+
+            <div class="cardOnClick" id="firstOnClick">
+                <div class="blackOut"></div>
+                <div class="cardInfo">
+                    <div class="whiteBox">
+                        <img src="/img/back.png">
+                        <h1>등 운동</h1>
+                        <p>광배근, 흔히 등 근육이라고 하는 부분은 어떻게 해야 효과가 좋을까?</p>
+                        <a href="posture.html">
+                            <div class="goDirect">
+                                <p>자세히 보기</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- 아래 네비게이션 바 -->
         <div class="bottomNav">
             <div class="iconContainer">
                 <a href="mainIndex.html">
-                    <i class="fa-solid fa-house" style="margin-bottom: 3px; color: #909090; z-index: 10;"></i>
+                    <i class="fa-solid fa-house" style="margin-bottom: 3px; color: #909090; z-index: 0;"></i>
                     <p>홈</p>
                 </a>
             </div>
             <div class="iconContainer">
                 <a href="timer.html">
-                    <i class="fa-solid fa-clock" style="margin-bottom: 3px; color: #909090; z-index: 10;"></i>
+                    <i class="fa-solid fa-clock" style="margin-bottom: 3px; color: #909090; z-index: 0;"></i>
                     <p>스톱워치</p>
                 </a>
             </div>
             <div class="iconContainer" id="onThisSection">
                 <a href="posture.html">
-                    <i class="fa-solid fa-dumbbell" style="margin-bottom: 3px; z-index: 10;"></i>
+                    <i class="fa-solid fa-dumbbell" style="margin-bottom: 3px; z-index: 0;"></i>
                     <p>자세</p>
                 </a>
             </div>
             <div class="iconContainer">
                 <a href="todo.html">
-                    <i class="fa-solid fa-list" style="margin-bottom: 3px; color: #909090; z-index: 10;"></i>
+                    <i class="fa-solid fa-list" style="margin-bottom: 3px; color: #909090; z-index: 0;"></i>
                     <p>투두리스트</p>
                 </a>
             </div>
         </div>
     </div>
-    <script src="/js/timer.js"></script>
+    <script src="/js/posture.js"></script>
 </body>
 
 </html>

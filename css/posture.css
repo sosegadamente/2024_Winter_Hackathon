@@ -24,7 +24,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: calc(60vh - 50px);
+    height: calc(100% - 100px);
     align-items: center;
 }
 
@@ -34,7 +34,123 @@ header {
     background-color: #909090;
 }
 
- 
+.form {
+    width: 95%;
+    height: 80%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    opacity: 90%;
+}
+
+.slideContainer {
+    width: 100%;
+    height: 175%;
+}
+
+.gymMachine {
+    border: 1px solid #000;
+    width: 100%;
+    height: calc(100% / 6);
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 10px;
+}
+
+.machineImg {
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    margin-right: 1em;
+    border-radius: 5px;
+    background-image: url(/img/middle_content.jpg);
+    background-size: cover;
+    box-shadow: 1px .5px .5px .5px #9092a2;
+}
+
+.machineFont {
+    display: flex;
+    flex-direction: column;
+}
+
+.machineName {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.machinePart {
+    color: #9092a2;
+    margin-top: .1em;
+}
+
+.machineEx {
+    margin-top: .1em;
+}
+
+.cardOnClick {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: yellow; */
+    position: absolute;
+    display: none;
+}
+
+.blackOut {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 70%;
+}
+
+.cardInfo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 90%;
+    border-radius: 20px 20px 0 0;
+    background-color: #e6e4e4;
+    padding: 30px;
+}
+
+.whiteBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.whiteBox img {
+    margin: 0 auto;
+    width: 90%;
+    height: 50%;
+}
+
+.whiteBox > p {
+    color: #6d6d6d;
+}
+
+.whiteBox > a {
+    height: 15%;
+    width: 100%;
+}
+
+.goDirect {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: #838383;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goDirect > p {
+    color: #fff;
+    font-size: 20px;
+}
 
 /* 글로벌 네비게이션 바 */
 .bottomNav {
@@ -55,7 +171,7 @@ header {
     border-radius: 50px;
 }
 
-#onThisSection > a > p {
+#onThisSection>a>p {
     color: #000;
 }
 
@@ -69,7 +185,7 @@ header {
     align-items: center;
 }
 
-.iconContainer > a > p {
+.iconContainer>a>p {
     color: #909090;
     margin-top: .5em;
 }

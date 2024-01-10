@@ -59,12 +59,12 @@ header {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  width: 1000px;
+  width: 2200px;
   padding: 10px;
 }
 
 .card {
-  width: 22.5%;
+  width: 10%;
   height: 100%;
   /* border: 1px solid #000; */
   display: flex;
@@ -146,6 +146,21 @@ header {
   background-color: #e6e4e4;
   padding: 30px;
 }
+
+/* 추가된 CSS 애니메이션 */
+.cardInfo.showCardInfo {
+  animation: showCardInfoAnimation 0.4s ease-in-out;
+}
+
+@keyframes showCardInfoAnimation {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
 
 .whiteBox {
   display: flex;
