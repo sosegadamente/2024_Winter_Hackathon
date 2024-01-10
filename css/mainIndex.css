@@ -76,7 +76,7 @@ header {
 
 .cardImage {
   width: 100%;
-  height: 55%;
+  height: 50%;
   background-color: #9a832a;
 }
 
@@ -99,13 +99,14 @@ header {
   background-image: url(/img/squat2.jpg);
   background-size: cover;
 }
+
 .cardFont {
   margin: 5px;
   padding: .25em 1em;
 }
 
 .cardFont h5 {
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 
 .cardFont p {

@@ -43,6 +43,7 @@ header {
     justify-content: space-between;
     background-color: #fff;
     opacity: 90%;
+    border-radius: 10px;
 }
 
 .slideContainer {
@@ -73,6 +74,7 @@ header {
 .machineFont {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .machineName {
@@ -126,6 +128,7 @@ header {
     margin: 0 auto;
     width: 90%;
     height: 50%;
+    border-radius: 10px;
 }
 
 .whiteBox > p {

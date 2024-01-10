@@ -20,8 +20,15 @@ function resetTimer() {
     isRunning = false;
     startTime = undefined;
     elapsedTime = 0;
-    updateDisplayAndSave();
+
+    console.log("Before updateDisplay in resetTimer:", elapsedTime);
+    updateDisplay();
+    console.log("After updateDisplay in resetTimer:", elapsedTime);
+
+    saveTimerState();
 }
+
+
 
 function updateDisplayAndSave() {
     updateDisplay();
@@ -29,7 +36,13 @@ function updateDisplayAndSave() {
 }
 
 function updateDisplay() {
-    elapsedTime = Date.now() - startTime;
+    const currentTime = Date.now();
+
+    if (startTime === undefined) {
+        elapsedTime = 0;
+    } else {
+        elapsedTime = currentTime - startTime;
+    }
 
     const seconds = Math.floor(elapsedTime / 1000) % 60;
     const minutes = Math.floor(elapsedTime / (1000 * 60)) % 60;
@@ -39,6 +52,7 @@ function updateDisplay() {
     document.getElementById('minutes').textContent = padZero(minutes);
     document.getElementById('seconds').textContent = padZero(seconds);
 }
+
 
 function padZero(value) {
     return value < 10 ? `0${value}` : value;
@@ -64,7 +78,6 @@ function loadTimerState() {
     }
 }
 
-// Load timer state on page load
 loadTimerState();
 
 document.getElementById('startBtn').addEventListener('click', () => {
@@ -86,5 +99,4 @@ document.getElementById('resetBtn').addEventListener('click', () => {
     resetTimer();
 });
 
-// Add window unload event to save state
 window.addEventListener('beforeunload', saveTimerState);
