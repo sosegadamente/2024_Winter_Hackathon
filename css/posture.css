@@ -32,6 +32,25 @@ header {
     width: 100%;
     height: 8vh;
     background-color: #909090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 100%;
+}
+
+header p {
+    font-size: 24px;
+}
+
+.health {
+    font-weight: 800;
+}
+
+.schoolZone {
+    color: #d1d1d1;
 }
 
 .form {
@@ -165,11 +184,11 @@ header {
     border-radius: 10px;
 }
 
-.whiteBox > p {
+.whiteBox>p {
     color: #6d6d6d;
 }
 
-.whiteBox > a {
+.whiteBox>a {
     height: 15%;
     width: 100%;
 }
@@ -184,7 +203,7 @@ header {
     justify-content: center;
 }
 
-.goDirect > p {
+.goDirect>p {
     color: #fff;
     font-size: 20px;
 }
@@ -222,7 +241,7 @@ header {
     align-items: center;
 }
 
-.iconContainer > a > p {
+.iconContainer>a>p {
     color: #909090;
     margin-top: .5em;
 }

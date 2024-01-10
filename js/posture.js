@@ -31,6 +31,15 @@ function hideCardOnClick(cardId) {
     cardOnClick.style.display = 'none';
 }
 
+// Check if the URL contains "showCard" parameter
+const urlParams = new URLSearchParams(window.location.search);
+const showCardParam = urlParams.get('showCard');
+
+// If "showCard" parameter exists, call showCardOnClick with the specified cardId
+if (showCardParam) {
+    showCardOnClick(showCardParam);
+}
+
 // Event listeners for each card
 document.getElementById('machine1').addEventListener('click', () => showCardOnClick('firstOnClick'));
 document.getElementById('machine2').addEventListener('click', () => showCardOnClick('secondOnClick'));
