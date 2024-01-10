@@ -13,17 +13,98 @@ header {
   background-color: #9a2a2a;
 }
 .todo_header {
+  display: flex;
   width: 100%;
   height: calc(100vh - 700px);
   background-color: aliceblue;
 }
 .todo_complete {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
-  height: calc(100vh - 800px);
-  background-color: rgb(29, 69, 104);
+  height: calc(100vh - 780px);
+  background-color: rgb(129, 142, 153);
 }
 .todo_list {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: calc(100vh - 200px);
-  background-color: rgb(115, 172, 223);
+  background-color: rgb(188, 205, 219);
+}
+.todo_name{
+  width: 50%;
+  height: 100%;
+  background-color: rgb(24, 64, 100);
+}
+.todo_value_container {
+  margin-top: 30px;
+  width: 90%;
+  background-color: rgb(3, 49, 34);
+  height: calc(100vh - 200px);
+}
+.button{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: aqua;
+}
+.button:hover{
+background-color: black;
+}
+.input_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+/* modal part */
+.modal{
+  display: none;
+  position: absolute;
+  width: 90%;
+  height: 40%;
+  background-color: #9a2a2a;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.inputAdd {
+  display: flex;
+}
+
+.plusBtn {
+  background-color: yellow;
+  padding: 20px;
 }
