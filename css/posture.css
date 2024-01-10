@@ -66,15 +66,49 @@ header {
     /* border: 1px solid #000; */
     margin-right: 1em;
     border-radius: 5px;
-    background-image: url(/img/middle_content.jpg);
     background-size: cover;
     box-shadow: 1px .5px .5px .5px #9092a2;
+}
+
+#machine1 .machineImg {
+    background-image: url(/img/healthMachine/스미스머신1.jpg);
+}
+
+#machine2 .machineImg {
+    background-image: url(/img/healthMachine/레그익스텐션2.jpg);
+}
+
+#machine3 .machineImg {
+    background-image: url(/img/healthMachine/레그컬2.jpg);
+}
+
+#machine4 .machineImg {
+    background-image: url(/img/healthMachine/프레스머신2.jpg);
+}
+
+#machine5 .machineImg {
+    background-image: url(/img/healthMachine/랫풀다운2.jpg);
+}
+
+#machine6 .machineImg {
+    background-image: url(/img/healthMachine/듀얼풀리6.jpg);
+}
+
+#machine7 .machineImg {
+    background-image: url(/img/healthMachine/요가매트2.jpg);
+}
+
+#machine8 .machineImg {
+    background-image: url(/img/healthMachine/폼롤러2.jpg);
+}
+
+#machine9 .machineImg {
+    background-image: url(/img/healthMachine/풀업바.jpg);
 }
 
 .machineFont {
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .machineName {
@@ -84,7 +118,7 @@ header {
 
 .machinePart {
     color: #9092a2;
-    margin-top: .1em;
+    margin-top: .5em;
 }
 
 .cardOnClick {

@@ -8,12 +8,6 @@ function showCardOnClick(cardId) {
     const blackOut = cardOnClick.querySelector('.blackOut');
     const cardInfo = cardOnClick.querySelector('.cardInfo');
 
-    // Hide icons in iconContainer
-    const iconContainers = document.querySelectorAll('.iconContainer');
-    iconContainers.forEach((container) => {
-        container.style.display = 'none';
-    });
-
     blackOut.addEventListener('click', () => hideCardOnClick(cardId));
 
     // Add animation class to cardInfo for smooth appearance
