@@ -36,3 +36,13 @@ document.getElementById('seventhCard').addEventListener('click', () => showCardO
 document.getElementById('eighthCard').addEventListener('click', () => showCardOnClick('eighthOnClick'));
 document.getElementById('ninthCard').addEventListener('click', () => showCardOnClick('ninthOnClick'));
 
+// Service Worker registration
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js') // sw.js 파일의 경로에 따라 수정
+        .then((registration) => {
+            console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch((error) => {
+            console.error('Service Worker registration failed:', error);
+        });
+}

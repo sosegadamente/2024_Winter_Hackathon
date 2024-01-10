@@ -8,13 +8,6 @@
   text-decoration: none;
 }
 
-@font-face {
-  font-family: 'KartriderExtraBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KartriderExtraBold.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-}
-
 /* 레이아웃 */
 .layout {
   width: 100%;
@@ -42,11 +35,11 @@ header {
 .cardScroll {
   width: 100%;
   overflow-x: scroll;
-  height: 40%;
+  height: 50%;
 }
 
 .cardSection {
-  height: 40%;
+  height: 50%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -166,7 +159,7 @@ header {
 }
 
 .abox {
-  height: 40%;
+  height: 35%;
   width: 100%;
   /* border: 1px solid #000; */
   padding: 10px;
