@@ -184,8 +184,9 @@ header p {
     border-radius: 10px;
 }
 
-.whiteBox>p {
+.whiteBox > p {
     color: #6d6d6d;
+    margin-bottom: 3em;
 }
 
 .whiteBox>a {
