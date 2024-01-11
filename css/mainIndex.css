@@ -270,6 +270,23 @@ header p {
   width: 100%;
   height: 100%;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 3em 0 2em;
+}
+
+.stimulation p {
+  color: #fff;
+  font-size: 1.5em;
+  background-color: #000;
+  opacity: 80%;
+  z-index: -2;
+}
+
+.stimulation p:nth-child(2) {
+  justify-content: end;
+  display: flex;
 }
 
 /* 글로벌 네비게이션 바 */
