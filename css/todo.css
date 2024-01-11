@@ -59,11 +59,55 @@ header p {
   background-color: rgb(24, 64, 100);
 }
 .todo_value_container {
+  overflow-y: auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
   width: 90%;
   background-color: rgb(3, 49, 34);
   height: calc(100vh - 200px);
 }
+<<<<<<< Updated upstream
+=======
+.todos_container {
+  width: 100%;
+  height: 100%;
+}
+.todolsit_value {
+  border-radius: 20px;
+  width: 100%;
+  height: 23%;
+  background-color: #9a2a2a;
+}
+.todos {
+  background-color: #9a2a2a;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.word_cont,
+.todolist_complete_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  width: 50%;
+  height: 100%;
+}
+.word_cont {
+  justify-content: space-evenly;
+  padding-right: 50px;
+  flex-direction: column;
+}
+.todolist_complete_cont > div {
+  border-radius: 70px;
+  width: 25%;
+  height: 30%;
+  background-color: #b59d9d;
+}
+>>>>>>> Stashed changes
 .button {
   width: 100px;
   height: 100px;
@@ -72,7 +116,11 @@ header p {
   background-color: aqua;
 }
 .button:hover {
+<<<<<<< Updated upstream
   background-color: black;
+=======
+  background-color: rgb(26, 21, 21);
+>>>>>>> Stashed changes
 }
 .input_container {
   display: flex;
@@ -127,6 +175,7 @@ header p {
   background-color: yellow;
   padding: 20px;
 }
+<<<<<<< Updated upstream
 
 /* 글로벌 네비게이션 바 */
 .bottomNav {
@@ -168,3 +217,5 @@ header p {
 .iconContainer i {
   scale: 170%;
 }
+=======
+>>>>>>> Stashed changes
