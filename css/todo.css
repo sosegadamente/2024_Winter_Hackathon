@@ -53,7 +53,7 @@ header p {
   height: calc(100vh - 200px);
   background-color: rgb(188, 205, 219);
 }
-.todo_name{
+.todo_name {
   width: 50%;
   height: 100%;
   background-color: rgb(24, 64, 100);
@@ -64,17 +64,17 @@ header p {
   background-color: rgb(3, 49, 34);
   height: calc(100vh - 200px);
 }
-.button{
+.button {
   width: 100px;
   height: 100px;
   border-radius: 50px;
   border: none;
   background-color: aqua;
 }
-.button:hover{
-background-color: black;
+.button:hover {
+  background-color: black;
 }
-.input_container{
+.input_container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +83,7 @@ background-color: black;
 }
 
 /* modal part */
-.modal{
+.modal {
   display: none;
   position: absolute;
   width: 90%;
@@ -146,7 +146,7 @@ background-color: black;
   border-radius: 50px;
 }
 
-#onThisSection > a > p{
+#onThisSection > a > p {
   color: #000;
 }
 
@@ -162,7 +162,7 @@ background-color: black;
 
 .iconContainer > a > p {
   color: #909090;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .iconContainer i {
