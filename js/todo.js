@@ -1,66 +1,54 @@
-const modal = document.querySelector(".modal");
-const open_modal = document.querySelector(".button");
-const close_modal = document.querySelector(".close_modal");
-
-open_modal.onclick = function () {
-  modal.style.display = "block";
-};
-
-close_modal.onclick = function () {
-  modal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none"; // 모달 숨기기
-  }
-};
-
-<<<<<<< Updated upstream
-const todoInputValue = document.querySelector(".modal_input");
-const plusBtn = document.querySelector(".plusBtn");
+document.addEventListener("DOMContentLoaded", function () {
+  const inputValue = document.querySelector(".todoInputContainer input");
+  const plusBtn = document.querySelector(".plusBtn");
+  const addedTodoItemContainer = document.querySelector(
+  ".addedTodoItemContainer"
+);
 
 plusBtn.addEventListener("click", function () {
-  const createTodoList = document.createElement("li");
-});
-=======
-const Plus_Btn = document.querySelector(".plusBtn");
-const modal_input = document.querySelector(".modal_input");
+  const todoText = inputValue.value.trim();
 
-Plus_Btn.addEventListener("click", plusBtn_handler);
-
-function plusBtn_handler(e) {
-  if (modal_input.value === "") {
-    return;
-  } else {
-    if (e.type === "click") {
-      // 새로운 todo 요소 생성
-      const $newTodo = document.createElement("div");
-      $newTodo.innerHTML = `
-      <div class="todos">
-        <div class="word_cont">
-          <h2></h2>
-          <h5 style="color: rgba(101, 101, 101, 0.809);">dmddm</h5>
-        </div>
-        <div class="todolist_complete_cont">
-          <div class="todos_complete"></div>
-        </div>
-      </div>
-    `;
-
-      // modal_input의 값을 가져와서 todo의 h1에 설정
-      const inputText = modal_input.value;
-      $newTodo.querySelector(".word_cont > h2").textContent = inputText;
-
-      // 생성된 todo를 todos 요소에 추가
-      const todo_list_container = document.querySelector(
-        ".todo_value_container"
-      );
-      todo_list_container.appendChild($newTodo);
-
-      // 입력 필드 초기화
-      modal_input.value = "";
-    }
+  if (todoText === "") {
+      console.log(1);
+      return
   }
-}
->>>>>>> Stashed changes
+
+  const addedTodoItem = document.createElement("div");
+  addedTodoItem.classList.add("addedTodoItem");
+
+  const valueContainer = document.createElement("div");
+  valueContainer.classList.add("valueContainer");
+  const todoTextElement = document.createElement("p");
+  todoTextElement.innerText = todoText;
+  valueContainer.appendChild(todoTextElement);
+
+  const functionContainer = document.createElement("div");
+  functionContainer.classList.add("functionContainer");
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  const deleteBtn = document.createElement("div");
+  deleteBtn.classList.add("deleteBtn");
+  deleteBtn.innerText = "X";
+  functionContainer.appendChild(checkbox)
+  functionContainer.appendChild(deleteBtn)
+
+  addedTodoItem.appendChild(valueContainer);
+  addedTodoItem.appendChild(functionContainer);
+
+  addedTodoItemContainer.appendChild(addedTodoItem);
+
+  inputValue.value = "";
+
+  checkbox.addEventListener("change", function () {
+  if (checkbox.checked) {
+      addedTodoItem.classList.add("completed");
+  } else {
+      addedTodoItem.classList.remove("completed");
+  }
+  });
+
+  deleteBtn.addEventListener("click", function () {
+      addedTodoItemContainer.removeChild(addedTodoItem);
+      });
+  })
+})
